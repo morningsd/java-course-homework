@@ -18,5 +18,11 @@
 
 ![make-jar-third-party-library](https://github.com/dem14n/java-course-homework/blob/master/hw1/part1/images/make-jar-third-party-library.png?raw=true)
 
+## Application with all classes types (inner, nested, local, anonymous)
+
+![compile-run-all-classes-types-1](https://github.com/dem14n/java-course-homework/blob/master/hw1/part1/images/compile-run-all-classes-types-1.png?raw=true)
+
+![compile-run-all-classes-types-2](https://github.com/dem14n/java-course-homework/blob/master/hw1/part1/images/compile-run-all-classes-types-2.png?raw=true)
+
 
 
