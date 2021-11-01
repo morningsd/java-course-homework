@@ -1,10 +1,5 @@
 package com.demian.hw1.part1;
 
-interface LocalInterface {
-
-  void sayHello();
-}
-
 public class AllClassesTypes {
 
   private String innerName;

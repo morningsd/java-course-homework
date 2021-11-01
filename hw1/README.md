@@ -38,4 +38,14 @@ $ symbol is used to represent inner classes, so
  - inner class     => $Inner
  - nested class    => $Nested
 
+## Application with anonymous class and lambda that implements the same interface
+
+![compile-run-anonymous-lambda-types-1](https://github.com/dem14n/java-course-homework/blob/master/hw1/part1/images/compile-run-anonymous-lambda-types-1.png?raw=true)
+
+![compile-run-anonymous-lambda-types-2](https://github.com/dem14n/java-course-homework/blob/master/hw1/part1/images/compile-run-anonymous-lambda-types-2.png?raw=true)
+
+If JVM would desugar lambdas into anonymous classes during compile time, that wouldn't make them true functions and lead to expensive process of initiation of new class whenever it encounters lambdas. Because of that 
+> lambda syntax is desugared into JVM level instructions generated during compilation, that means that the actual responsibility of constructing lambda is deferred to runtime.
+
+
 
