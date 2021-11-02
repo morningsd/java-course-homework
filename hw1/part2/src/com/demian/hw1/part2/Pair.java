@@ -1,5 +1,9 @@
 package com.demian.hw1.part2;
 
+/*
+  This class is quite self-explanatory.
+  I need it because java standard library has no similar class (not counting javafx.util.Pair)
+ */
 public class Pair<K, V> {
   private K key;
   private V value;

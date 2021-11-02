@@ -3,6 +3,14 @@ package com.demian.hw1.part2;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * This class contains implementation of Tic Tac Toe game
+ * <p>Create an instance of this class and invoke method start() to play the game.
+ * Follow this link to see the rules <a href="https://www.exploratorium.edu/brain_explorer/tictactoe.html">TicTacToe</a>
+ * </p>
+ *
+ * @author Oleksii Krasnovskyi
+ */
 public class TicTacToe {
 
   private static final Scanner SCANNER = new Scanner(System.in);
@@ -18,17 +26,22 @@ public class TicTacToe {
       + "| 7 | 8 | 9 |\n"
       + "+---+---+---+\n";
 
+  /**
+   * Sole constructor.
+   */
   public TicTacToe() {
     Arrays.fill(busySquares, ' ');
   }
 
+  /**
+   * Main method that starts the game.
+   */
   public static void start() {
     printTable(new char[]{'1', '2', '3', '4', '5', '6', '7', '8', '9'});
     System.out.println("Welcome to the TicTacToe!\n"
         + "You can see coordinates of squares above.\n"
         + "To play against friend press 1, to play against computer press 2.\n\n"
         + "Note! Press Ctrl+c to stop the game.\n");
-
     int gameType;
     do {
       System.out.println("To play against friend press 1, to play against computer press 2.\n"
@@ -113,6 +126,10 @@ public class TicTacToe {
     return true;
   }
 
+  /*
+    Trying to implement minimax algorithm.
+    To see explanation go to https://habr.com/ru/post/329058/
+   */
   private static Pair<Integer, Integer> getCountedCoordinate(int currentPlayerPos, char[] field, int coefficient) {
     int bestPosition = -1;
     int bestPositionScore = Integer.MIN_VALUE;
