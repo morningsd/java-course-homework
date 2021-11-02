@@ -3,4 +3,4 @@
 
 # IntelliJ files
 *.iml
-
+.idea/
