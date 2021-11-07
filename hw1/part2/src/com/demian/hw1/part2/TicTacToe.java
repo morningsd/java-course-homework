@@ -36,7 +36,7 @@ public class TicTacToe {
   /**
    * Main method that starts the game.
    */
-  public static void start() {
+  public void start() {
     printTable(new char[]{'1', '2', '3', '4', '5', '6', '7', '8', '9'});
     System.out.println("Welcome to the TicTacToe!\n"
         + "You can see coordinates of squares above.\n"
